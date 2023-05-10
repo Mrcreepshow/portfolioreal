@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Cedarville+Cursive&family=Cute+Font&family=DynaPuff:wght@700&family=Homemade+Apple&family=Knewave&family=Lacquer&family=Liu+Jian+Mao+Cao&family=Oi&family=Rubik+Burned&family=Stylish&display=swap" rel="stylesheet">
+  <style>
+    body{
+
+      background-image: url('img037.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-width: 100%;
+      min-height: 100%;
+
+
+    }
+/*     .CD{
+      width: 25vw;
+      position: absolute;
+      top: calc(50vh);
+      right: 50px;
+    }*/
+    .codebox{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: center;
+
+
+/*       width: 75h;
+      height: calc(width*.5);
+      border: none;
+      postion: absolute; */
+    }
+    h1{
+     text-align: center;
+     top: 10vh;
+     font-family: 'Stylish', sans-serif;
+     color: white;
+     font-size: 50px;
+     opacity: .5;
+    }
+    p{
+      margin-right: 60px;
+      text-align: right;
+      font-family: 'Stylish', sans-serif;
+      color: white;
+      opacity: .6;
+      font-size: 20px;
+
+    }
+    .collapsible {
+  background-color: #dbdbdb;
+  color: #7f7f7f;
+  cursor: pointer;
+  padding: 20px;
+  width: 15%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-family: 'Cute Font', cursive;
+  opacity: 70%;
+  border-radius: 50%;
+
+  text-align: center;
+}
+    .active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+    .content {
+  padding: 20px;
+  width: 15%;
+  display: none;
+  overflow: hidden;
+  background-color: #81817f;
+  color: #ecedea;
+  text-align: center;
+  font-family: 'Cute Font', cursive;
+  border-radius: 50%;
+  opacity: 70%;
+
+}
+
+
+  </style>
+
+<title>Portfolio</title>
+</head>
+<body>
+  <h1>fiber</h1>
+
+  <button type="button" class="collapsible">click me!</button>
+    <div class="content">
+      <p2>click the window below for sound frequency; refresh the page to stop sound and to view new image/restart code</p2>
+    </div>
+
+  <div class="codebox">
+      <iframe src="p5code/index.html" width="800" height="515" style="border:none"></iframe>
+  </div>
+
+
+  <p>
+    a visual experiment of the fragmentation of memory <br> 2022
+  </p>
+
+
+
+  <script>
+
+    let coll = document.getElementsByClassName("collapsible");
+let i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+
+  </script>
+  </body>
+</html>

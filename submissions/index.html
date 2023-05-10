@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Cedarville+Cursive&family=Cute+Font&family=DynaPuff:wght@700&family=Homemade+Apple&family=Knewave&family=Lacquer&family=Liu+Jian+Mao+Cao&family=Oi&family=Rubik+Burned&family=Stylish&display=swap" rel="stylesheet">
+		<title>submissions</title>
+		<style>
+
+	body{
+		background-color: #89649e;
+		animation-name: bg;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+	}
+	@keyframes bg {
+	from {background-color: #89649e;}
+	to {background-color: #643e7a;}
+}
+		form {
+  max-width: 500px;
+  margin: 150px auto;
+	color: #f5b478;
+	font-family: 'Stylish', sans-serif;
+	font-size: 20px;
+}
+
+fieldset {
+  padding: 30px;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+	font-family: 'Stylish', sans-serif;
+	color: #1c6e01;
+}
+		</style>
+	</head>
+	<body>
+		<form action="https://api.web3forms.com/submit" method="POST" id="form">
+		  <fieldset>
+		    <legend>Contact Form</legend>
+		    <input type="hidden" name="access_key" value="4e3c4570-d719-4e15-8e98-71608f1c0e33" />
+		    <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+		    <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+		    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+		    <div>
+		      <label for="name">Your name, an alias, or a keyboard smash</label><br>
+		      <input type="text" name="name" id="name" placeholder="Name" required />
+		      <br><br>
+		    </div>
+		    <div>
+		      <label for="email">Email Address</label><br>
+		      <input type="email" name="email" id="email" placeholder="(optional)"  /><br><br>
+		    </div>
+		    <div>
+		      <label for="phone">Phone Number</label>
+		      <br>
+		      <input type="text" name="phone" id="phone" placeholder="(optional)"  /><br><br>
+		    </div>
+		    <div>
+		      <label for="message">Send me a secret, a poem, a question, your grocery list, whatever you want!</label>
+		      <br>
+		      <textarea rows="5" name="message" id="message" placeholder="Your Message" required></textarea><br><br>
+		    </div>
+
+		    <button type="submit"> submit!! </button>
+		  </fieldset>
+		</form>
+
+	</body>
+</html>
